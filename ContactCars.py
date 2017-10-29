@@ -2,8 +2,8 @@ import urllib2
 import bs4
 import pandas as pd
 
-makes = 3
-pages = 3
+makes = 10
+pages = 10
 
 for make in range(1,makes):
     for page in range(1,pages):
