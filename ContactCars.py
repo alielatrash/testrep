@@ -39,12 +39,12 @@ for make in range(1,makes):
 
                 # data_set.append((make, model, year, price, km, cc))
 
-                print make
-                print model
-                print year
-                print price
-                print cc
-                print km
+                print car_make
+                print car_model
+                print car_year
+                print car_price
+                print car_cc
+                print car_km
 
                     # data_frame = pd.DataFrame(data_set, columns = [make, model, year, price, km, cc])
                     #
