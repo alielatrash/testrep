@@ -25,7 +25,6 @@ for make in range(1,makes):
         for item in g_data:
 
             print i
-
             data_2 = g_data[i].div
             car_make = data_2.findAll('p', {"class":"tit_2"})[0].text.encode('utf-8')
             car_model = data_2.findAll('p', {"class": "tit_3 right"})[0].text.encode('utf-8')
@@ -52,4 +51,5 @@ for make in range(1,makes):
             data_frame = pd.DataFrame(final, columns = [car_make, car_model, car_year, car_price, car_km, car_cc])
 
             data_frame.to_csv('contact_cars_final.csv', index=False, encoding='utf-8')
+
 
